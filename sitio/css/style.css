@@ -1,0 +1,324 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor
+{
+    display: grid;
+    background-color: rgb(255, 255, 180);
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.25fr;
+    grid-template-areas: 'header header'
+                          'main main'
+                          'productos productos'
+                          'quienes_somos quienes_somos'
+                          'footer footer';
+}
+
+/* Inicio Header */
+.header
+{
+    grid-area: header;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #FFEB94;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    
+    
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px) {
+  .header{
+              width: 100%;
+              zoom: 70%;
+              display: inline-flex;
+              background-color: red;
+              justify-content: space-between;
+              padding: 10px;
+              height: 75%;
+                }
+}
+
+/* Incio Menu Navbar */
+.btn_redes:hover
+{
+  position: static;
+  zoom:115%;
+}
+
+/* Inicio Menu Hamburguesa*/
+
+ul{
+  display: none;
+  
+}
+
+input:checked  ~ ul{
+  display: block;
+  position: fixed;
+}
+
+input {
+  display: none;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+  background:  #ffbdaf;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+  background: coral; 
+}
+
+ul{
+  margin-top:0;
+  padding: 0;
+  width: 110px;
+
+}
+
+
+li {
+  display: block;
+  background-color: rgb(255, 217, 217);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border: 1px solid;
+  position: static;
+}
+
+/*Estilo cuando el mouse pasa encima de cada link del menu*/
+li:hover {
+   background-color: #FFEB94;
+    border: 1px solid black;
+    color: #f05232;
+    zoom:110%;
+}
+/* Fin Menu Hamburguesa */
+
+.navbar a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Fin Menu Navbar */
+/* Fin Header */
+
+/* Inicio seccion Main + Portada */
+.main
+{
+   grid-area: main;
+   background-color: #ffbdaf;
+   height: 50%;
+   padding: 10px;
+   display: inline-flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+.main:hover
+{
+  zoom:110%;
+  position: static;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px){
+  .main, .text_portada, .imagen_portada
+              {
+                width: 90%;
+                display: block;
+                height: 30%;
+                background-color: red;
+              }
+
+}
+
+.main h2
+{
+  text-align: center;
+  font-weight: bold;   
+  padding: 5px;
+}
+
+.imagen_portada
+{
+  float: right ;
+}
+
+p{
+  width: 300px;
+  height: 100px;
+  float: right;
+}
+
+/* Fin seccion Main + Portada */
+
+/*Inicio Seccion Productos*/
+.productos
+{
+  grid-area: productos;
+  display: inline-flex;
+  justify-content: center;  
+  width: 100%;
+  padding-bottom: 30px;
+}
+.productos h2{
+  text-align: center;
+  font-weight: bold;
+}
+.productos p{
+  text-align: center;
+}
+
+.card_producto
+{
+  display: block;
+  background-color: white;
+  text-align: center;
+  border: 1px solid;
+  width: 300px;
+  padding-top: 40px;
+  margin: 10px;
+  height: 400px;
+}
+
+.card_producto:hover
+{
+  zoom: 105%;
+
+}
+
+.btn-img
+{
+  border: 1px solid #ffbdaf;
+  border-radius: 5px;
+  background-color: rgb(255, 217, 217);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 400px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.btn-img:hover
+{
+    background-color: #FFEB94;
+    border: 1px solid black;
+    color: #f05232;
+    zoom:120%;
+}
+
+/* Fin Seccion Productos */
+
+/* Inicio seccion Quienes somos */
+.quienes_somos
+{
+  grid-area: quienes_somos;
+  background-color:  #ffbdaf;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center ;
+  margin: 0 auto;
+  padding-bottom: 20px;
+ }
+ .quienes_somos:hover
+ {
+  zoom: 105%;
+ }
+
+.img_i
+{
+  display: inline-flex;
+  justify-content: flex-end; 
+}
+
+.text_i
+{
+  display: inline-flex;
+  width: 200px;
+  padding-top: 30px;
+}
+
+
+/* Fin Seccion Quienes somos */
+
+/* Inicio Footer */
+footer
+{
+  grid-area: footer;
+  background-color:#FFEB94;
+  height: 100px;
+  
+}
+
+footer p
+{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 5px;
+  padding-bottom: 20px;
+  
+}
+.volver
+{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 10px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(255, 217, 217);
+ 
+}
+.volver a
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+
+}
+.volver:hover
+{
+    background-color:  #f05232; 
+    border: 1px solid black;
+    zoom:120%;
+}
+
+@media screen and (max-width: 640px) and (min-width: 360px){
+  footer{
+                width: 100%;
+                display: block;
+                height: 30%;
+                font-size: 15px;
+                background-color: red;
+              }
+
+}
+/* Fin Footer */
