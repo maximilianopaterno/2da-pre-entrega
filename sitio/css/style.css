@@ -4,11 +4,14 @@
     margin: 0;
 }
 
+body
+{
+  background-color: rgb(255, 255, 180);;
+}
 
 .contenedor
 {
     display: grid;
-    background-color: rgb(255, 255, 180);
     height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.01fr 0.5fr 0.5fr 0.5fr 0.25fr;
