@@ -4,36 +4,152 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Catalogo | Acaramelado TodoDulce</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='../css/bootstrap.min.css'>
     <link rel='stylesheet' href="../css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="navbar">
-            <nav>
+    <div class="contenedor-catalogo">
+        <!--Inicio Header con Media Quey-->
+        <header class="header-catalogo">
+            <div class="navbar">
+             <nav>
                 <input type="checkbox" id="menu">
                 <label for="menu"> ☰  </label>
                 <ul>
                   <li><a href="../index.html"> Inicio</a></li>
                   <li><a href="../pages/catalogo.html"> Catalogo</a></li>
-                  <li><a href="../#"> Contacto</a> </li>
                 </ul>
-            </nav>
+             </nav>
+            </div>
+            <div class="logo_navbar">
+                 <img src="../imagenes/navbar/Logo.png" width="120px" height="120px" class="logo">
+            </div>
+            <div class="list_redes">
+               <a href="https://www.facebook.com/profile.php?id=100063811753320" target="_blank">  <img src=../imagenes/redes/facebook.webp width="40px" height="40px" alt="facebook" title="Facebook" class="btn_redes"> </a>
+               <a href="https://www.instagram.com/acarameladotododulce/" target="_blank">  <img src=../imagenes/redes/instagram.webp width="40px" height="40px" alt="instagram" title="Instagram" class="btn_redes"> </a>
+              <a href="https://wa.link/umpaot" target="_blank">  <img src=../imagenes/redes/whatsapp.webp width="40px" height="40px" alt="whatsapp" title="Whatsapp" class="btn_redes"> </a>
+            </div>   
+        </header>  
+        <!--Fin Header con Media Query-->
+        <!--Inicio Menu Catalogo con Bootstrap-->
+        <div class="catalogo container">
+            <div class="dulce row">
+                <h2> Catalogo de Productos </h2>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 295px;">
+                    <img src="../imagenes/catalogo/dulces/pastafrola.jpg" class="card_imagen">
+                    <h2 class="card-title">Pastafrola </h2>
+                    <p class="card-text">Precio $1200</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/lemonpie.jpg" class="card_imagen">
+                    <h2 class="card-title">Lemon Pie</h2>
+                    <p class="card-text">Precio $3000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/tartadurazno.jpg" class="card_imagen">
+                    <h2 class="card-title">Tarta de Durazno</h2>
+                    <p class="card-text">Precio $3000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/tartaricota.jpg"class="card_imagen">
+                    <h2 class="card-title">Tarta de Ricota </h2>
+                    <p class="card-text">Precio $2500</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 295px;">
+                    <img src="../imagenes/catalogo/dulces/tartacoco.jpg" class="card_imagen">
+                    <h2 class="card-title">Tarta de Coco </h2>
+                    <p class="card-text">Precio $1200</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/alfajoresdechocolate.jpg" class="card_imagen">
+                    <h2 class="card-title">Alfas de chocolate </h2>
+                    <p class="card-text">Precio $3000 la docena</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/maicena.jpg" class="card_imagen">
+                    <h2 class="card-title"> Alfas de maicena</h2>
+                    <p class="card-text">Precio $300 la docena</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/dulces/rogel.jpg"class="card_imagen">
+                    <h2 class="card-title">Rogel </h2>
+                    <p class="card-text">Precio $2500</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+            </div>
+            <br>
+            <div class="boxes row">
+                <h2> Catalogo de Boxes </h2>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 295px;">
+                    <img src="../imagenes/catalogo/boxes/desayuno.jpg" class="card_imagen">
+                    <h2 class="card-title">Box Desayuno </h2>
+                    <p class="card-text">Precio $3500</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/boxes/personalizado1.jpg" class="card_imagen">
+                    <h2 class="card-title">Box Cumpleaños 1</h2>
+                    <p class="card-text">Precio $3000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/boxes/personalizado2.jpg" class="card_imagen">
+                    <h2 class="card-title">Box Cumpleaños 2</h2>
+                    <p class="card-text">Precio $5000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/boxes/personalizado3.jpg "class="card_imagen">
+                    <h2 class="card-title">Box Personalizado </h2>
+                    <p class="card-text">Consulta Presupuesto</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+            </div>
+            <br>
+            <div class="picadas row">
+                <h2> Catalogo de Picadas </h2>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 295px;">
+                    <img src="../imagenes/catalogo/picadas/picada1.jpg" class="card_imagen">
+                    <h2 class="card-title">Picada 2 pesonas</h2>
+                    <p class="card-text">Precio $3500</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/picadas/picada2.jpg" class="card_imagen">
+                    <h2 class="card-title">Picada 4 pesonas</h2>
+                    <p class="card-text">Precio $5000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/picadas/picada3.jpg" class="card_imagen">
+                    <h2 class="card-title">Picadas 8 personas</h2>
+                    <p class="card-text">Precio $7000</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>
+                <div class="card col-lg-3 col-md-3 mt-3 text-center" style="width: 250px; height: 290px;">
+                    <img src="../imagenes/catalogo/picadas/picada4.jpg "class="card_imagen">
+                    <h2 class="card-title">Personalizado </h2>
+                    <p class="card-text">Consulta Presupuesto</p>
+                    <a href="../pages/catalogo.html" class="btn-card">Añadir al carrito</a>
+                </div>    
+            </div>
         </div>
-        <div class="logo_navbar">
-            <img src="../imagenes/navbar/Logo.png" width="120px" height="120px" class="logo">
-        </div>
-        <div class="list_redes">
-            <a href="https://www.facebook.com/profile.php?id=100063811753320" target="_blank">  <img src=../imagenes/redes/facebook.webp width="40px" height="40px" alt="facebook" title="Facebook" class="btn_redes"> </a>
-            <a href="https://www.instagram.com/acarameladotododulce/" target="_blank">  <img src=../imagenes/redes/instagram.webp width="40px" height="40px" alt="instagram" title="Instagram" class="btn_redes"> </a>
-            <a href="https://wa.link/umpaot" target="_blank">  <img src=../imagenes/redes/whatsapp.webp width="40px" height="40px" alt="whatsapp" title="Whatsapp" class="btn_redes"> </a>
-        </div>   
-</header>  
-
-
-
-        <script src='js/bootstrap.min.js'></script>
-
- 
+        <!--Fin Menu Catalogo con Bootstrap-->
+        <!--Inicio Footer con media query-->
+        <footer> 
+            <p> © 2023 Acaramelado TodoDulce ® | Todos los derechos reservados </p>
+          
+            <button class="volver"> <a href="../index.html"> Inicio </a> </button> 
+        </footer> 
+        <!--Fin Footer-->  
+    </div>
+        <script src='../js/bootstrap.min.js'></script>
 </body>
 </html>
